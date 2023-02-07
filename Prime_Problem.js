@@ -1,17 +1,15 @@
-let num = 97;
+let num = 31;
 let p = 0;
 
-if (num>1){
-    for (let i = 2; i<num ; i++){
+
+    for (let i = 1; i<=num ; i++){
         if (num%i===0){
-            p = 1;
-            break;
+            p++;
         }
     }
-}
-if (p==1){
-    console.log("No");
+if (p==2 && p != 0){
+    console.log("Yes");
 }
 else{
-    console.log("Yes");
+    console.log("No");
 }
